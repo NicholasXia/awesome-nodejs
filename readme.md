@@ -1,122 +1,70 @@
-<div align="center">
-	<div>
-		<img width="500" src="media/logo.svg" alt="Awesome Node.js">
-	</div>
-	<br>
-	<p>
-		<a href="https://www.patreon.com/sindresorhus">My open source work is supported by the community</a>
-	</p>
-	<p>
-		<sup>Special thanks to:</sup>
-		<br>
-		<a href="https://github.com/wtgtybhertgeghgtwtg">
-			<img src="https://cdn.rawgit.com/sindresorhus/stuff/daa49fabede538ea8a533d75e7e55f4c81e3a972/sponsors/wtgtybhertgeghgtwtg-logo-light.svg" width="260" alt="wtgtybhertgeghgtwtg">
-		</a>
-	</p>
-	<br>
-	<br>
-	<a href="https://awesome.re">
-		<img src="https://awesome.re/badge.svg" alt="Awesome">
-	</a>
-	<p>
-		<sub>Just type <a href="https://node.cool"><code>node.cool</code></a> to go here. Check out my <a href="https://blog.sindresorhus.com">blog</a> and follow me on <a href="https://twitter.com/sindresorhus">Twitter</a>.</sub>
-	</p>
-	<br>
-</div>
 
 
-## Contents
+
+## 关于NodeJS的一切
 
 - [Packages](#packages)
-	- [Mad science](#mad-science)
-	- [Command-line apps](#command-line-apps)
-	- [Functional programming](#functional-programming)
-	- [HTTP](#http)
+	- [Command-line apps-命令行应用](#command-line-apps)
+	- [Functional programming-函数式编程](#functional-programming)
+	- [HTTP-HTTP](#http)
 	- [Debugging / Profiling](#debugging--profiling)
-	- [Logging](#logging)
-	- [Command-line utilities](#command-line-utilities)
-	- [Build tools](#build-tools)
-	- [Hardware](#hardware)
-	- [Templating](#templating)
-	- [Web frameworks](#web-frameworks)
-	- [Documentation](#documentation)
-	- [Filesystem](#filesystem)
-	- [Control flow](#control-flow)
-	- [Streams](#streams)
-	- [Real-time](#real-time)
-	- [Image](#image)
-	- [Text](#text)
-	- [Number](#number)
-	- [Math](#math)
-	- [Date](#date)
+	- [Logging-日志](#logging)
+	- [Command-line utilities-命令行工具](#command-line-utilities)
+	- [Build tools-构建工具](#build-tools)
+	- [Templating-模板](#templating)
+	- [Web frameworks-web框架](#web-frameworks)
+	- [Documentation-文档](#documentation)
+	- [Filesystem-文件系统](#filesystem)
+	- [Control flow-控制流](#control-flow)
+	- [Streams-流](#streams)
+	- [Real-time-实时](#real-time)
+	- [Image-图片](#image)
+	- [Text-文本](#text)
+	- [Number-数字](#number)
+	- [Math-数学](#math)
+	- [Date-日期](#date)
 	- [URL](#url)
-	- [Data validation](#data-validation)
-	- [Parsing](#parsing)
-	- [Humanize](#humanize)
-	- [Compression](#compression)
-	- [Network](#network)
-	- [Database](#database)
-	- [Testing](#testing)
-	- [Security](#security)
-	- [Benchmarking](#benchmarking)
-	- [Minifiers](#minifiers)
-	- [Authentication](#authentication)
-	- [Authorization](#authorization)
-	- [Email](#email)
-	- [Job queues](#job-queues)
-	- [Node.js management](#nodejs-management)
-	- [Natural language processing](#natural-language-processing)
-	- [Process management](#process-management)
-	- [Automation](#automation)
-	- [AST](#ast)
-	- [Static site generators](#static-site-generators)
-	- [Content management systems](#content-management-systems)
-	- [Forum](#forum)
-	- [Blogging](#blogging)
-	- [Weird](#weird)
-	- [Serialization](#serialization)
-	- [Miscellaneous](#miscellaneous)
-- [Resources](#resources)
-	- [Tutorials](#tutorials)
-	- [Discovery](#discovery)
-	- [Articles](#articles)
-	- [Newsletters](#newsletters)
-	- [Videos](#videos)
-	- [Podcasts](#podcasts)
-	- [Books](#books)
-	- [Blogs](#blogs)
-	- [Courses](#courses)
-	- [Cheatsheets](#cheatsheets)
-	- [Tools](#tools)
-	- [Community](#community)
-	- [Miscellaneous](#miscellaneous)
+	- [Data validation-数据校验](#data-validation)
+	- [Parsing-解析](#parsing)
+	- [Humanize-人性化](#humanize)
+	- [Compression-压缩](#compression)
+	- [Network-网络](#network)
+	- [Database-数据库](#database)
+	- [Testing-测试](#testing)
+	- [Security-安全](#security)
+	- [Benchmarking-基准测试](#benchmarking)
+	- [Minifiers-最小化](#minifiers)
+	- [Authentication-认证](#authentication)
+	- [Authorization-权限](#authorization)
+	- [Email-邮件](#email)
+	- [Job queues-任务队列](#job-queues)
+	- [Node.js management-管理](#nodejs-management)
+	- [Process management-进程管理](#process-management)
+	- [Automation-自动化](#automation)
+	- [AST-语法树](#ast)
+	- [Static site generators-静态网站生成](#static-site-generators)
+	- [Content management systems-CMS](#content-management-systems)
+	- [Forum-论坛](#forum)
+	- [Blogging-播客](#blogging)
+	- [Weird-好玩的](#weird)
+	- [Serialization-序列化](#serialization)
+	- [Miscellaneous-杂项](#miscellaneous)
+- [Resources-资源](#resources)
+	- [Tutorials-教程](#tutorials)
+	- [Discovery-发现](#discovery)
+	- [Articles-文章](#articles)
+	- [Newsletters-新闻](#newsletters)
+	- [Videos-视频](#videos)
+	- [Book-图书](#books)
+	- [Blogs-播客](#blogs)
+	- [Courses-课程](#courses)
+	- [Cheatsheets-快捷表](#cheatsheets)
+	- [Tools-工具](#tools)
+	- [Community-社区](#community)
+	- [Miscellaneous-杂项](#miscellaneous)
 
 
 ## Packages
-
-### Mad science
-
-- [webtorrent](https://github.com/feross/webtorrent) - Streaming torrent client for Node.js and the browser.
-- [peerflix](https://github.com/mafintosh/peerflix) - Streaming torrent client.
-- [dat](http://dat-data.com) - Real-time replication and versioning for data sets.
-- [ipfs](https://github.com/ipfs/js-ipfs) - Distributed file system that seeks to connect all computing devices with the same system of files.
-- [stackgl](http://stack.gl) - Open software ecosystem for WebGL, built on top of browserify and npm.
-- [peerwiki](https://github.com/mafintosh/peerwiki) - All of Wikipedia on BitTorrent.
-- [peercast](https://github.com/mafintosh/peercast) - Stream a torrent video to Chromecast.
-- [BitcoinJS](https://github.com/bitcoinjs/bitcoinjs-lib) - Clean, readable, proven Bitcoin library.
-- [Bitcore](https://github.com/bitpay/bitcore) - Pure and powerful Bitcoin library.
-- [PDFKit](https://github.com/devongovett/pdfkit) - PDF generation library.
-- [turf](https://github.com/Turfjs/turf) - Modular geospatial processing and analysis engine.
-- [webcat](https://github.com/mafintosh/webcat) - p2p pipe across the web using WebRTC that uses your GitHub private/public key for authentication.
-- [NodeOS](https://github.com/NodeOS/NodeOS) - The first operating system powered by npm.
-- [limdu](https://github.com/erelsgl/limdu) - Machine-learning framework.
-- [Cytoscape.js](https://github.com/cytoscape/cytoscape.js) - Graph theory (a.k.a. network) modeling and analysis.
-- [Kadence](https://kadence.github.io/) - Kademlia distributed hash table.
-- [seedshot](https://github.com/twobucks/seedshot) - Temporary P2P screenshot sharing from your browser.
-- [js-git](https://github.com/creationix/js-git) - JavaScript implementation of Git.
-- [skale](https://github.com/skale-me/skale-engine) - High performance distributed data processing engine.
-- [xlsx](https://github.com/sheetjs/js-xlsx) - Pure JS Excel spreadsheet reader and writer.
-- [isomorphic-git](https://github.com/isomorphic-git/isomorphic-git) - Pure JavaScript implementation of Git.
 
 
 ### Command-line apps
@@ -293,16 +241,7 @@
 - [pkg](https://github.com/zeit/pkg) - Package your Node.js project into an executable.
 
 
-### Hardware
 
-- [johnny-five](https://github.com/rwaldron/johnny-five) - Firmata based Arduino Framework.
-- [serialport](https://github.com/voodootikigod/node-serialport) - Access serial ports for reading and writing.
-- [usb](https://github.com/nonolith/node-usb) - USB library.
-- [i2c-bus](https://github.com/fivdi/i2c-bus) - I2C serial bus access.
-- [onoff](https://github.com/fivdi/onoff) - GPIO access and interrupt detection.
-- [spi-device](https://github.com/fivdi/spi-device) - SPI serial bus access.
-- [pigpio](https://github.com/fivdi/pigpio) - Fast GPIO, PWM, servo control, state change notification, and interrupt handling on the Raspberry Pi.
-- [gps](https://github.com/infusion/GPS.js) - NMEA parser for handling GPS receivers.
 
 
 ### Templating
@@ -672,12 +611,7 @@
 - [nvm for Windows](https://github.com/coreybutler/nvm-windows) - Version management for Windows.
 
 
-### Natural language processing
 
-- [retext](https://github.com/wooorm/retext) - An extensible natural language system.
-- [franc](https://github.com/wooorm/franc) - Detect the language of text.
-- [leven](https://github.com/sindresorhus/leven) - Measure the difference between two strings using the Levenshtein distance algorithm.
-- [natural](https://github.com/NaturalNode/natural) - Natural language facility.
 
 
 ### Process management
@@ -882,16 +816,3 @@
 - [generator-nm](https://github.com/sindresorhus/generator-nm) - Scaffold out a node module.
 - [Microsoft Node.js Guidelines](https://github.com/Microsoft/nodejs-guidelines) - Tips, tricks, and resources for working with Node.js on Microsoft platforms.
 - [Module Requests & Ideas](https://github.com/sindresorhus/module-requests) - Request a JavaScript module you wish existed or get ideas for modules.
-
-
-## Related lists
-
-- [awesome-npm](https://github.com/sindresorhus/awesome-npm) - Resources and tips for using npm.
-- [awesome-cross-platform-nodejs](https://github.com/bcoe/awesome-cross-platform-nodejs) - Resources for writing and testing cross-platform code.
-
-
-## License
-
-[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Sindre Sorhus](http://sindresorhus.com) has waived all copyright and related or neighboring rights to this work.
